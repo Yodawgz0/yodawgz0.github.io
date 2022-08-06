@@ -67,7 +67,7 @@ export const NavigationBar = () => {
                 alt="linkedin"
               />
             </a>
-            <a href="https://www.instagram.com/">
+            <a href="https://www.instagram.com/ashleytennyson0/">
               <img
                 className="social-icon-panel__icon"
                 src={instagram}
