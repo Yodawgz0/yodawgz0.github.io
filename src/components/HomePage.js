@@ -1,26 +1,33 @@
 import "../Styles/homePageStyle.scss";
 import { Row, Col } from "react-bootstrap";
-
+import frontPagePic from "../assests/frontPagePic.png";
 export const HomePage = () => {
   return (
     <Row>
-      <Col>
-        <div className="wrapper">
-          <div className="static-txt">Hi! I'm Ashley, I</div>
+      <div className="wrapper">
+        <Col>
+          <div className="static-txt">
+            Hi! I'm Ashley, <br /> & Like to...
+          </div>
           <ul className="dynamic-txts">
             <li>
-              <span>Love Python</span>
+              <span>Code Python</span>
             </li>
             <li>
-              <span>develope Website</span>
+              <span>Curate Website</span>
             </li>
             <li>
-              <span>Freelancer</span>
+              <span>Craft Protocols</span>
+            </li>
+            <li>
+              <span>React Developer</span>
             </li>
           </ul>
-        </div>
-      </Col>
-      <img src="../assests/frontPagePic.png" alt="mainPageLogo" />
+        </Col>
+        <Col>
+          <img className="mainPagepPic" src={frontPagePic} alt="mainPagepPic" />
+        </Col>
+      </div>
     </Row>
   );
 };
