@@ -13,7 +13,7 @@ body {
   padding-top: 10em;
 }
 .wrapper .static-txt {
-  color: rgb(23, 47, 186);
+  color: #0feef8;
   font-size: 470%;
   font-weight: 600;
 }
@@ -25,7 +25,8 @@ body {
 }
 .dynamic-txts li {
   list-style: none;
-  color: #cdc5c5;
+  font-style: italic;
+  color: #f2befa;
   font-size: 430%;
   font-weight: 500;
   position: relative;

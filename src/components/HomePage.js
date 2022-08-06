@@ -6,21 +6,19 @@ export const HomePage = () => {
     <Row>
       <div className="wrapper">
         <Col>
-          <div className="static-txt">
-            Hi! I'm Ashley, <br /> & Like to...
-          </div>
+          <div className="static-txt">Hi! I'm Ashley & I...</div>
           <ul className="dynamic-txts">
             <li>
               <span>Code Python</span>
             </li>
             <li>
-              <span>Curate Website</span>
+              <span>Curate APIs</span>
             </li>
             <li>
               <span>Craft Protocols</span>
             </li>
             <li>
-              <span>React Developer</span>
+              <span>Develop Front-End</span>
             </li>
           </ul>
         </Col>
