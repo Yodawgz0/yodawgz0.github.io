@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Navbar, Nav, Row, Col } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import instagram from "../assests/instagram.png";
 import linkedin from "../assests/linkedin.png";
@@ -28,7 +28,8 @@ export const NavigationBar = () => {
   };
 
   return (
-    <Navbar className={scrolled ? "scrolledNavbar" : "NavbarMain"}>
+    // Todo ->>>>> <Navbar className={scrolled ? "scrolledBar" : "NavbarMain"}>
+    <Navbar className={scrolled ? "NavbarMain" : "NavbarMain"}>
       <a href="#home" className="NavbarMain__mainLogo">
         Yodawgz0
       </a>
