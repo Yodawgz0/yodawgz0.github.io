@@ -1,7 +1,7 @@
 {
   "homepage": "https://yodawgz0.github.io/",
   "name": "yodawgz0",
-  "version": "0.1.0",
+  "version": "0.3",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -11,7 +11,9 @@
     "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
+    "react-circular-progressbar": "^2.1.0",
     "react-dom": "^18.2.0",
+    "react-multi-carousel": "^2.8.2",
     "react-scripts": "5.0.1",
     "save-dev": "^0.0.1-security",
     "web-vitals": "^2.1.4"
