@@ -9,7 +9,7 @@ export const HomePage = () => {
           <div className="static-txt">Hi! I'm Ashley & I...</div>
           <ul className="dynamic-txts">
             <li>
-              <span>Code Python</span>
+              <span>Dote on Python</span>
             </li>
             <li>
               <span>Curate APIs</span>
