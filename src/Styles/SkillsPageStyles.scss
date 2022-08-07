@@ -1,0 +1,71 @@
+.mainContainer {
+  background: rgb(13, 13, 13);
+  background: linear-gradient(
+    180deg,
+    rgba(13, 13, 13, 1) 30%,
+    rgba(9, 111, 121, 1) 100%
+  );
+  padding: 5em 3em;
+}
+.IntroText {
+  margin-left: 3em;
+  margin-right: 3em;
+  color: #9d72ff;
+  display: flex;
+  text-align: center;
+  margin-top: 2.5%;
+}
+.skillsMainPanel {
+  margin-left: 8em;
+  margin-right: 8em;
+  border-radius: 100px;
+  background-color: black;
+  border-width: 80px;
+  border-color: aqua;
+  .skillsMain {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #01ffc3;
+    text-align: center;
+    .skillsText {
+      font-weight: 700;
+    }
+  }
+  .skillSlider {
+    padding: 9ch 4ch;
+    display: flex;
+    width: 65%;
+    .itemsofSkills {
+      width: 20ch;
+      height: 20ch;
+      .progressBar {
+        width: 170px;
+      }
+    }
+  }
+}
+
+.react-multi-carousel-item {
+  width: 250px !important;
+  padding-left: 0.8%;
+}
+
+blockquote {
+  font: 12px/18px normal "Courier New", sans-serif;
+  padding-left: 20px;
+  margin: 1.5em 1em;
+  background-image: url(../assests/openBrace.png);
+  background-size: 20ch;
+  background-repeat: no-repeat;
+  text-indent: 23px;
+  margin-bottom: 25ch;
+}
+blockquote span {
+  display: block;
+  background-image: url(../assests/closeBrace.png);
+  background-size: 20ch;
+  background-position-x: 102%;
+  background-repeat: no-repeat;
+  padding-bottom: 2ch;
+}
