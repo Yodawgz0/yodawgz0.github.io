@@ -16,7 +16,7 @@ export const SkillsPage = () => {
     { skills: "CSS3", percent: 85 },
     { skills: "Protocols", percent: 75 },
     { skills: "C", percent: 60 },
-    { skills: "Linux", percent: 60 },
+    { skills: "APIs", percent: 60 },
   ];
   const responsive = {
     superLargeDesktop: {
