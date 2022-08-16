@@ -1,3 +1,6 @@
+:global {
+  @import "node_modules/slick-carousel/slick/slick";
+}
 .mainContainer {
   background: rgb(13, 13, 13);
   background: linear-gradient(
@@ -20,8 +23,6 @@
   margin-right: 8em;
   border-radius: 100px;
   background-color: black;
-  border-width: 80px;
-  border-color: aqua;
   .skillsMain {
     display: flex;
     align-items: center;
@@ -32,23 +33,22 @@
       font-weight: 700;
     }
   }
-  .skillSlider {
-    padding: 9ch 4ch;
-    display: flex;
-    width: 65%;
-    .itemsofSkills {
-      width: 20ch;
-      height: 20ch;
-      .progressBar {
-        width: 170px;
-      }
-    }
-  }
 }
 
-.react-multi-carousel-item {
-  width: 250px !important;
-  padding-left: 0.8%;
+.skillSlider {
+  width: 90%;
+  padding: 15ch;
+  .skillSliderBarMain {
+    padding-left: 20%;
+    color: white;
+    .skillSliderBarText {
+      font-size: large;
+      font-weight: 700;
+    }
+    .skillSliderBar {
+      width: 70%;
+    }
+  }
 }
 
 blockquote {
