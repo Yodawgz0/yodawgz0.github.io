@@ -1,12 +1,9 @@
-:global {
-  @import "node_modules/slick-carousel/slick/slick";
-}
 .mainContainer {
   background: rgb(13, 13, 13);
   background: linear-gradient(
     180deg,
     rgba(13, 13, 13, 1) 30%,
-    rgba(9, 111, 121, 1) 100%
+    rgb(180, 4, 255) 100%
   );
   padding: 5em 3em;
 }
@@ -27,7 +24,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: #01ffc3;
+    color: #f8bbff;
     text-align: center;
     .skillsText {
       font-weight: 700;
@@ -39,7 +36,7 @@
   width: 90%;
   padding: 15ch;
   .skillSliderBarMain {
-    padding-left: 20%;
+    padding: 20%;
     color: white;
     .skillSliderBarText {
       font-size: large;
