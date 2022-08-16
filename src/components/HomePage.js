@@ -18,7 +18,7 @@ export const HomePage = () => {
               <span>Craft Protocols</span>
             </li>
             <li>
-              <span>Develop Front-End</span>
+              <span>Tread Front-End</span>
             </li>
           </ul>
         </Col>
