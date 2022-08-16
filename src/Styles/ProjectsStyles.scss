@@ -1,0 +1,19 @@
+.mainProjectsPage {
+  background: rgb(180, 4, 255);
+  background: linear-gradient(
+    180deg,
+    rgb(180, 4, 255) 30%,
+    rgba(7, 0, 255, 1) 100%
+  );
+  padding: 5em 3em;
+  text-align: center;
+  color: white;
+  .heading {
+    font-size: 4em;
+  }
+  .headingtext {
+    font-size: 2em;
+    color: white;
+    padding: 2.5em;
+  }
+}
