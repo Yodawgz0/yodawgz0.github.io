@@ -1,6 +1,5 @@
 import Slider from "react-slick";
 import "../Styles/SkillsPageStyles.scss";
-import { ProgressBar } from "react-bootstrap";
 import {
   CircularProgressbarWithChildren,
   buildStyles,
