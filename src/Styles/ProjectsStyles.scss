@@ -15,5 +15,21 @@
     font-size: 2em;
     color: white;
     padding: 2.5em;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
+  .tab {
+    color: black;
+  }
+}
+.nav-link {
+  color: wheat;
+  font-size: large;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.nav-link:hover {
+  color: rgb(70, 187, 255);
+}
+.nav-link.active {
+  color: rgb(24, 0, 176) !important;
+  background-color: rgb(217, 116, 248) !important;
 }

@@ -2,7 +2,7 @@ import React from "react";
 import "../Styles/ProjectsStyles.scss";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
-
+import AppTab from "../features/AppTab";
 export default function ProjectsPage() {
   return (
     <div className="mainProjectsPage">
@@ -19,13 +19,17 @@ export default function ProjectsPage() {
         className="mb-3"
         fill
       >
-        <Tab eventKey="App" title="App Dev">
+        <Tab eventKey="App" className="tab__appTab" title="App Dev">
+          <AppTab />
+        </Tab>
+        <Tab eventKey="Python" className="tab__pythonTab" title="Python Dev">
           Hekki
         </Tab>
-        <Tab eventKey="Python" title="Python Dev">
-          Hekki
-        </Tab>
-        <Tab eventKey="GitHub" title="GitHub Projects">
+        <Tab
+          eventKey="GitHub"
+          className="tab__githubTab"
+          title="GitHub Projects"
+        >
           Hekki
         </Tab>
       </Tabs>
