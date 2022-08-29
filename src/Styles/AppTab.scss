@@ -1,0 +1,19 @@
+.AppTabContainer {
+  flex-direction: row;
+  margin-top: 5rem;
+  display: flex;
+  padding-left: 2em;
+  padding-right: 2em;
+  &__mainImg {
+    width: 70%;
+    height: 70%;
+    border-radius: 30px;
+  }
+  &__Maintext {
+    text-align: center;
+    color: bisque;
+    padding: 4em;
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
