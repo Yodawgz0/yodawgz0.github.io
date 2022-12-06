@@ -1,6 +1,8 @@
 import "../Styles/homePageStyle.scss";
 import { Row, Col } from "react-bootstrap";
 import frontPagePic from "../assests/frontPagePic.png";
+import React from "react";
+
 export const HomePage = () => {
   return (
     <Row>

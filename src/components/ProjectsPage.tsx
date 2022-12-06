@@ -3,6 +3,7 @@ import "../Styles/ProjectsStyles.scss";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import AppTab from "../features/AppTab";
+
 export default function ProjectsPage() {
   return (
     <div className="mainProjectsPage">

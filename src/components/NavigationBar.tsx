@@ -5,6 +5,7 @@ import instagram from "../assests/instagram.png";
 import linkedin from "../assests/linkedin.png";
 import github from "../assests/github.png";
 import "../Styles/NavigationBarstyle.scss";
+import React from "react";
 
 export const NavigationBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -23,7 +24,7 @@ export const NavigationBar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const onUpodateLink = (pageLink) => {
+  const onUpodateLink = (pageLink: string) => {
     setActiveLink(pageLink);
   };
 

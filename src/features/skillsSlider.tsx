@@ -4,6 +4,7 @@ import {
   CircularProgressbarWithChildren,
   buildStyles,
 } from "react-circular-progressbar";
+import React from "react";
 
 export default function SkillsSlider() {
   const data = [
@@ -55,7 +56,7 @@ export default function SkillsSlider() {
                 styles={buildStyles({
                   trailColor: "#000000",
                   pathColor: "#01FFFF",
-                  borderRadius: "10px",
+                  //borderRadius: "10px",
                   strokeLinecap: "butt",
                 })}
                 strokeWidth={9}

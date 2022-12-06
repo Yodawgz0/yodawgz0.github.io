@@ -1,5 +1,7 @@
 import "../Styles/SkillsPageStyles.scss";
 import SkillsSlider from "../features/skillsSlider";
+import React from "react";
+
 export const SkillsPage = () => {
   return (
     <div className="mainContainer">
