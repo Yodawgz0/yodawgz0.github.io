@@ -1,9 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.c5093517.css",
-    "main.js": "/static/js/main.5dd1549f.js",
-    "static/js/787.782593df.chunk.js": "/static/js/787.782593df.chunk.js",
+    "main.css": "/static/css/main.10f7ba33.css",
+    "main.js": "/static/js/main.338c4009.js",
     "static/media/frontPagePic.png": "/static/media/frontPagePic.9ad2a40a524f527b2480.png",
+    "static/media/sass.png": "/static/media/sass.aa16d6441e3e941f60c1.png",
+    "static/media/python.png": "/static/media/python.826099d39447cf0e1533.png",
+    "static/media/app1.jpg": "/static/media/app1.bbe7c7639cc2c59d3160.jpg",
+    "static/media/javascript.png": "/static/media/javascript.7f8751632b42a9932c15.png",
+    "static/media/reactNative.png": "/static/media/reactNative.9226496b664b5a220a5b.png",
     "static/media/closeBrace.png": "/static/media/closeBrace.5c84ceb2c77f62b307b0.png",
     "static/media/openBrace.png": "/static/media/openBrace.e8049f70cf15e42d7944.png",
     "static/media/instagram.png": "/static/media/instagram.ac32ec0a111aeba03298.png",
@@ -14,12 +18,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.c5093517.css.map": "/static/css/main.c5093517.css.map",
-    "main.5dd1549f.js.map": "/static/js/main.5dd1549f.js.map",
-    "787.782593df.chunk.js.map": "/static/js/787.782593df.chunk.js.map"
+    "main.10f7ba33.css.map": "/static/css/main.10f7ba33.css.map",
+    "main.338c4009.js.map": "/static/js/main.338c4009.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5093517.css",
-    "static/js/main.5dd1549f.js"
+    "static/css/main.10f7ba33.css",
+    "static/js/main.338c4009.js"
   ]
 }
