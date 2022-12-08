@@ -14,24 +14,19 @@ export default function ProjectsPage() {
         latest releases but also explore plethora of domains that can expand and
         add to my knowledge base.
       </p>
-      <Tabs
-        defaultActiveKey="profile"
-        id="fill-tab-example"
-        className="mb-3"
-        fill
-      >
+      <Tabs defaultActiveKey="App" id="fill-tab-example" className="mb-3" fill>
         <Tab eventKey="App" className="tab__appTab" title="App Dev">
           <AppTab />
         </Tab>
-        <Tab eventKey="Python" className="tab__pythonTab" title="Python Dev">
-          Hekki
+        <Tab eventKey="" className="tab__pythonTab" title="WebApp Dev">
+          9
         </Tab>
         <Tab
-          eventKey="GitHub"
+          eventKey="University Pojects"
           className="tab__githubTab"
           title="GitHub Projects"
         >
-          Hekki
+          Coming Soon...
         </Tab>
       </Tabs>
     </div>
