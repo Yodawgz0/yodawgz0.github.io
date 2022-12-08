@@ -1,5 +1,9 @@
 declare module "*.png";
 declare module "*.jpg";
+declare module "*.md" {
+  const value: string; // markdown is just a string
+  export default value;
+}
 
 declare module "react-slick" {
   interface __config {

@@ -1,4 +1,4 @@
-module.exports = {
+(module.exports = {
   // change to .tsx if necessary
   entry: "./src/app.tsx",
   output: {
@@ -32,4 +32,7 @@ module.exports = {
   },
   // addition - add source-map support
   devtool: "source-map",
-};
+  test: /\.md$/,
+  loader: "html!markdown",
+}),
+  { test: /\.json$/, loader: "json" };
