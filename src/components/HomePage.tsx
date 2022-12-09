@@ -18,7 +18,7 @@ export const HomePage = () => {
               <span>Curate APIs</span>
             </li>
             <li>
-              <span>Craft Protocols</span>
+              <span>Flex on TypeScript</span>
             </li>
             <li>
               <span>Tread Front-End</span>

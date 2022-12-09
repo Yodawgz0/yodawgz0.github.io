@@ -1,0 +1,29 @@
+.WorkExpContainer {
+  margin-top: 4em;
+  padding-left: 10em;
+  padding-right: 10em;
+  text-align: start;
+  &__positionHeaderContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__GithubLink {
+    margin-left: 42%;
+    text-decoration: none;
+    font-size: xx-large;
+    color: antiquewhite;
+  }
+}
+
+.subFontItalics {
+  font-style: italic;
+  font-size: small;
+}
+.subFontItalicsTitle {
+  font-weight: 600;
+}
+.subFontItalicsSKills {
+  font-style: italic;
+}
