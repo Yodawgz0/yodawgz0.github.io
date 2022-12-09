@@ -121,7 +121,7 @@ const WorkExperienceTab = () => {
         <br />
         <span className="subFontItalicsTitle">Developer Tools: </span>
         <span className="subFontItalicsSKills">
-          Git, Linux, VS Code, PyCharm, React Dev, Chome/Edge/Moz
+          Git, Linux, VS Code, PyCharm, React Dev, Chrome/Edge/Moz
         </span>
         Dev, gulp <br />
         <span className="subFontItalicsTitle">Libraries: </span>

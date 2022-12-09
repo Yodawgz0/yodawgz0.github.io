@@ -31,11 +31,11 @@ const AppTab = () => {
           <h2 className="AppTabContainer__conatiner__Maintext">
             <ul>
               <li>
-                Using React Native made an app for andriod. Has a login page and
+                Using React Native made an app for Android. Has a login page and
                 connection using TCP.
               </li>
               <li>
-                IP is fecthed and connection is established. Over which data
+                IP is fetched and connection is established. Over which data
                 like images and information can be transferred.
               </li>
               <li>

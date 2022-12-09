@@ -18,7 +18,7 @@ export default function ProjectsPage() {
             ? "linear-gradient(180deg,rgb(180, 4, 255) 13%  ,rgba(0,16,47,0.8550770650056898) 41%)"
             : activeTab === "Work Experience"
             ? "linear-gradient(180deg, rgb(180, 4, 255) 13%, rgba(47,0,0,0.8550770650056898) 41%)"
-            : activeTab === "University Pojects"
+            : activeTab === "University Projects"
             ? "linear-gradient(180deg, rgb(180, 4, 255) 13%, rgba(0,0,0,0.8550770650056898) 41%)"
             : "",
       }}
@@ -30,14 +30,14 @@ export default function ProjectsPage() {
           Indiana University, Bloomington
         </span>
         <br />
-        Pursing Masters in{" "}
+        Pursuing Masters in{" "}
         <span style={{ color: "#890707", fontWeight: "800" }}>
           Intelligent Systems Engineering
         </span>
         , Spring 2023
         <br />
         <br />
-        Specializing in the Cyber-Pysical Systems and moreover application
+        Specializing in the Cyber-Physical Systems and moreover application
         development for the burgeoning field of cloud & internet of things.
       </p>
       <Tabs
@@ -58,9 +58,9 @@ export default function ProjectsPage() {
           <WorkExperienceTab />
         </Tab>
         <Tab
-          eventKey="University Pojects"
+          eventKey="University Projects"
           className="tab__githubTab"
-          title="University Pojects"
+          title="University Projects"
         >
           Coming Soon...
         </Tab>
