@@ -23,12 +23,22 @@ export default function ProjectsPage() {
             : "",
       }}
     >
-      <h3 className="heading">Tad bit more about me :)</h3>
+      <h3 className="heading ">Tad bit more about me :)</h3>
       <p className="h1 mb-5 headingtext">
-        Having learned various development tools and frameworks. I constantly
-        create and work on various projects that not only keep me at speed with
-        latest releases but also explore plethora of domains that can expand and
-        add to my knowledge base.
+        I am currently enrolled in{" "}
+        <span style={{ color: "#890707", fontWeight: "800" }}>
+          Indiana University, Bloomington
+        </span>
+        <br />
+        Pursing Masters in{" "}
+        <span style={{ color: "#890707", fontWeight: "800" }}>
+          Intelligent Systems Engineering
+        </span>
+        , Spring 2023
+        <br />
+        <br />
+        Specializing in the Cyber-Pysical Systems and moreover application
+        development for the burgeoning field of cloud & internet of things.
       </p>
       <Tabs
         defaultActiveKey=""
