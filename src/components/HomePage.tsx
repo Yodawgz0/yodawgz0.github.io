@@ -1,5 +1,6 @@
 import "../Styles/homePageStyle.scss";
 import { Row, Col } from "react-bootstrap";
+// @ts-ignore
 import frontPagePic from "../assests/frontPagePic.png";
 import React from "react";
 
