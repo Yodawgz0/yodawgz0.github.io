@@ -30,7 +30,10 @@ const WorkExperienceTab = () => {
             Developed python scripts for automating various workflows.Worked
             with selenium, web scraping
           </li>
-          <li>Performed execution of test cases and analysis of logs</li>
+          <li>
+            Worked with automation of windows applications like Outlook and
+            Excel
+          </li>
           <li>Worked on JIRA, Confluence</li>
         </ul>
       </div>

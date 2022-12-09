@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 // @ts-ignore
@@ -11,6 +11,7 @@ import "../Styles/NavigationBarstyle.scss";
 import React from "react";
 
 export const NavigationBar = () => {
+  const scrolltoSkills = useRef();
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
 
@@ -39,10 +40,9 @@ export const NavigationBar = () => {
       </a>
 
       <Nav className="NavbarMain__mainPanel">
-        {["home", "skills", "projects"].map((pageLink, index) => (
+        {["Skills", "Resume", "AppDev", "Projects"].map((pageLink, index) => (
           <Nav.Link
             key={index}
-            href={"#" + pageLink}
             className={
               activeLink === "pageLink"
                 ? "acitveNavbarLink"
