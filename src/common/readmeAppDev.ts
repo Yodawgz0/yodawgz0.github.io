@@ -1,4 +1,4 @@
-export const readmeapp = `   #      All-Manager
+export const readmeapp = `   #      ReadMe.md
 
 It is an app which manages and track your things, i will keep adding the feature
 

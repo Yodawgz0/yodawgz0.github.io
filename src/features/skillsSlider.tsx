@@ -21,7 +21,7 @@ export default function SkillsSlider() {
   ];
   const SliderSettings = {
     infinite: true,
-    speed: 500,
+    speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
     swipeToSlide: true,

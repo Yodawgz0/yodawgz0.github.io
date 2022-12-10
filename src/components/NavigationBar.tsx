@@ -1,11 +1,8 @@
 import { useEffect, useState, useRef } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-// @ts-ignore
 import instagram from "../assests/instagram.png";
-// @ts-ignore
 import linkedin from "../assests/linkedin.png";
-// @ts-ignore
 import github from "../assests/github.png";
 import "../Styles/NavigationBarstyle.scss";
 import React from "react";
