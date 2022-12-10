@@ -18,7 +18,7 @@ export const NavigationBar = () => {
 
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY > 1) {
+      if (window.scrollY) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -34,10 +34,11 @@ export const NavigationBar = () => {
   };
 
   return (
-    // Todo ->>>>> <Navbar className={scrolled ? "scrolledBar" : "NavbarMain"}>
     <Navbar
       className={"NavbarMain"}
-      style={{ position: scrolled ? "fixed" : "relative" }}
+      style={{
+        position: scrolled ? "fixed" : "relative",
+      }}
     >
       <div className="container">
         <p className="glitch">
