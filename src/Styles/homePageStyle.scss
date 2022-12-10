@@ -27,7 +27,7 @@ body {
   list-style: none;
   font-style: italic;
   color: #f2befa;
-  font-size: 430%;
+  font-size: 420%;
   font-weight: 500;
   position: relative;
   top: 0;
@@ -35,9 +35,10 @@ body {
 }
 @keyframes slide {
   100% {
-    top: -390px;
+    top: -362.5px;
   }
 }
+
 .dynamic-txts li span {
   position: relative;
   margin: 5px 0;
@@ -47,10 +48,10 @@ body {
   position: absolute;
   left: 0;
   height: 100%;
-  width: 110%;
+  width: 100%;
   background: #0d0d0d;
-  border-left: 2px solid #000000;
-  animation: typing 3s steps(12) infinite;
+  border-left: 2px solid #866868;
+  animation: typing 3s steps(14) infinite;
 }
 @keyframes typing {
   40%,

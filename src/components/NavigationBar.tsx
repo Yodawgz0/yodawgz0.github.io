@@ -9,6 +9,7 @@ import linkedin from "../assests/linkedin.png";
 import github from "../assests/github.png";
 import "../Styles/NavigationBarstyle.scss";
 import React from "react";
+import "../Styles/coolGlitch.scss";
 
 export const NavigationBar = () => {
   const scrolltoSkills = useRef();
@@ -35,9 +36,13 @@ export const NavigationBar = () => {
   return (
     // Todo ->>>>> <Navbar className={scrolled ? "scrolledBar" : "NavbarMain"}>
     <Navbar className={scrolled ? "NavbarMain" : "NavbarMain"}>
-      <a href="#home" className="NavbarMain__mainLogo">
-        Yodawgz0
-      </a>
+      <div className="container">
+        <p className="glitch">
+          <span aria-hidden="true">Yodawgz0</span>
+          Yodawgz0
+          <span aria-hidden="true">Yodawgz0</span>
+        </p>
+      </div>
 
       <Nav className="NavbarMain__mainPanel">
         {["Skills", "Resume", "AppDev", "Projects"].map((pageLink, index) => (
@@ -55,32 +60,29 @@ export const NavigationBar = () => {
             </span>
           </Nav.Link>
         ))}
-
-        <span>
-          <div className="social-icon-panel">
-            <a href="https://github.com/Yodawgz0">
-              <img
-                className="social-icon-panel__icon"
-                src={github}
-                alt="github"
-              />
-            </a>
-            <a href="https://www.linkedin.com/in/ashleytennyson/">
-              <img
-                className="social-icon-panel__icon"
-                src={linkedin}
-                alt="linkedin"
-              />
-            </a>
-            <a href="https://www.instagram.com/ashleytennyson0/">
-              <img
-                className="social-icon-panel__icon"
-                src={instagram}
-                alt="instagram"
-              />
-            </a>
-          </div>
-        </span>
+        <div className="social-icon-panel">
+          <a href="https://github.com/Yodawgz0">
+            <img
+              className="social-icon-panel__icon"
+              src={github}
+              alt="github"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/ashleytennyson/">
+            <img
+              className="social-icon-panel__icon"
+              src={linkedin}
+              alt="linkedin"
+            />
+          </a>
+          <a href="https://www.instagram.com/ashleytennyson0/">
+            <img
+              className="social-icon-panel__icon"
+              src={instagram}
+              alt="instagram"
+            />
+          </a>
+        </div>
         <button className="contact-us" onClick={() => console.log("connect")}>
           <span>Let's Connect</span>
         </button>
