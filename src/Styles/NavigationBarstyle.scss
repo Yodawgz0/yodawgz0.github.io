@@ -1,9 +1,7 @@
-.scrolledNavbar {
-  background-color: aqua;
-  height: 2ch;
-}
 .NavbarMain {
+  z-index: 1;
   width: 100%;
+  height: 100px;
   background-color: #0d0d0d !important;
   color: white;
   justify-content: space-between !important;

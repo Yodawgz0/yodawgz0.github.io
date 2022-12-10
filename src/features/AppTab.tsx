@@ -17,6 +17,7 @@ const AppTab = () => {
       <a
         className="AppTabContainer__GithubLink"
         href="https://github.com/Yodawgz0/All-Manager"
+        target="_blank"
       >
         <FontAwesomeIcon icon={faLink} />
         All Manager
