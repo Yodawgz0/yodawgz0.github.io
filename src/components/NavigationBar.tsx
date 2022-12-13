@@ -10,14 +10,40 @@ import "../Styles/NavigationBarstyle.scss";
 import React, { useEffect, useState } from "react";
 import "../Styles/coolGlitch.scss";
 import { Props } from "./IProps";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import Modal from "react-bootstrap/Modal";
 
 export const NavigationBar = ({ activeLinkSet, activeLinkValue }: Props) => {
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState<boolean>(false);
+  const [show, setShow] = useState<boolean>(false);
+  const [emailVal, setEmailVal] = useState<String>("");
+  const [innerTextVal, setInnerTextVal] = useState<String>("");
+  const onEmailChange = (email: string) => {
+    setEmailVal(email);
+  };
+  const onInnerTextChange = (InnerText: string) => {
+    setInnerTextVal(InnerText);
+  };
+  const handleSubmit = () => {
+    if (emailVal.length && innerTextVal.length) {
+      console.log("ok");
+      setShow(false);
+    } else {
+      console.log("No");
+    }
+  };
+
+  const handleClose = () => {
+    setShow(false);
+  };
+  const handleShow = () => setShow(true);
 
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY) {
         setScrolled(true);
+        activeLinkSet("");
       } else {
         setScrolled(false);
       }
@@ -25,7 +51,7 @@ export const NavigationBar = ({ activeLinkSet, activeLinkValue }: Props) => {
 
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [activeLinkSet]);
   return (
     <Navbar
       className={"NavbarMain"}
@@ -91,10 +117,55 @@ export const NavigationBar = ({ activeLinkSet, activeLinkValue }: Props) => {
             />
           </a>
         </div>
-        <button className="contact-us" onClick={() => console.log("connect")}>
+        <button className="contact-us" onClick={() => handleShow()}>
           <span>Let's Connect</span>
         </button>
       </Nav>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Hit me Up!!</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form onSubmit={() => handleSubmit()}>
+            <Form.Group className="mb-3">
+              <Form.Label>Email address</Form.Label>
+
+              <Form.Control
+                required
+                type="email"
+                placeholder="name@example.com"
+                autoFocus
+                onChange={(e) => {
+                  onEmailChange(e.target.value);
+                }}
+              />
+            </Form.Group>
+            <Form.Group
+              className="mb-3"
+              controlId="exampleForm.ControlTextarea1"
+            >
+              <Form.Label>Stuff that you want to say</Form.Label>
+              <Form.Control
+                as="textarea"
+                required
+                rows={3}
+                placeholder="Something..."
+                onChange={(e) => {
+                  onInnerTextChange(e.target.value);
+                }}
+              />
+            </Form.Group>
+          </Form>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" type="submit">
+            Send!
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </Navbar>
   );
 };
