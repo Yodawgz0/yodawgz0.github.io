@@ -3,16 +3,24 @@ import { NavigationBar } from "./components/NavigationBar";
 import { HomePage } from "./components/HomePage";
 import { SkillsPage } from "./components/SkillsPage";
 import ProjectsPage from "./components/ProjectsPage";
-import React from "react";
-function App() {
+import React, { useState } from "react";
+import { useRef } from "react";
+const App = () => {
+  const [activeLink, setActiveLink] = useState<string>("home");
+  const skillsRef = useRef();
+  const resumeRef = useRef();
+
   return (
     <div className="App">
-      <NavigationBar />
+      <NavigationBar
+        activeLinkSet={setActiveLink}
+        activeLinkValue={activeLink}
+      />
       <HomePage />
-      <SkillsPage />
+      <SkillsPage skillsRef={skillsRef} activeLinkValue={activeLink} />
       <ProjectsPage />
     </div>
   );
-}
+};
 
 export default App;
