@@ -1,16 +1,16 @@
-import { useEffect, useState, useRef } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+// @ts-ignore
 import instagram from "../assests/instagram.png";
+// @ts-ignore
 import linkedin from "../assests/linkedin.png";
+// @ts-ignore
 import github from "../assests/github.png";
 import "../Styles/NavigationBarstyle.scss";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Styles/coolGlitch.scss";
 
-export const NavigationBar = () => {
-  const scrolltoSkills = useRef();
-  const [activeLink, setActiveLink] = useState("home");
+export const NavigationBar = ({ activeLinkSet, activeLinkValue }: Props) => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -25,11 +25,6 @@ export const NavigationBar = () => {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  const onUpodateLink = (pageLink: string) => {
-    setActiveLink(pageLink);
-  };
-
   return (
     <Navbar
       className={"NavbarMain"}
@@ -44,17 +39,16 @@ export const NavigationBar = () => {
           <span aria-hidden="true">Yodawgz0</span>
         </p>
       </div>
-
       <Nav className="NavbarMain__mainPanel">
         {["Skills", "Resume", "AppDev", "Projects"].map((pageLink, index) => (
           <Nav.Link
             key={index}
             className={
-              activeLink === "pageLink"
+              activeLinkValue === "pageLink"
                 ? "acitveNavbarLink"
                 : "text-white  navbarlink"
             }
-            onClick={() => onUpodateLink(pageLink)}
+            onClick={() => activeLinkSet(pageLink)}
           >
             <span className="h5">
               {pageLink.slice(0, 1).toUpperCase() + pageLink.slice(1)}
@@ -62,21 +56,33 @@ export const NavigationBar = () => {
           </Nav.Link>
         ))}
         <div className="social-icon-panel">
-          <a href="https://github.com/Yodawgz0">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/Yodawgz0"
+          >
             <img
               className="social-icon-panel__icon"
               src={github}
               alt="github"
             />
           </a>
-          <a href="https://www.linkedin.com/in/ashleytennyson/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/ashleytennyson/"
+          >
             <img
               className="social-icon-panel__icon"
               src={linkedin}
               alt="linkedin"
             />
           </a>
-          <a href="https://www.instagram.com/ashleytennyson0/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.instagram.com/ashleytennyson0/"
+          >
             <img
               className="social-icon-panel__icon"
               src={instagram}
