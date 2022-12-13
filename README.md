@@ -2,4 +2,4 @@
 My Website 
 
 
-It has all the Details of my skilss Projects and other contacts
+It has all the Details of my skils Projects and other contacts
