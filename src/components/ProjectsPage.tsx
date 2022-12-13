@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Styles/ProjectsStyles.scss";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import AppTab from "../features/AppTab";
 import WorkExperienceTab from "../features/WorkExperienceTab";
-import { useState } from "react";
+import { Props } from "./IProps";
 
-export default function ProjectsPage() {
+export default function ProjectsPage({ resumeRef, activeLinkValue }: Props) {
   const [activeTab, setActivetab] = useState<string | null>("");
+  useEffect(() => {
+    if (activeLinkValue === "Resume") {
+      setActivetab("Work Experience");
+      resumeRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    }
+  }, [activeLinkValue, resumeRef]);
 
   return (
     <div
@@ -40,31 +49,34 @@ export default function ProjectsPage() {
         Specializing in the Cyber-Physical Systems and moreover application
         development for the burgeoning field of cloud & internet of things.
       </p>
-      <Tabs
-        defaultActiveKey=""
-        id="fill-tab-example"
-        className="mb-3"
-        fill
-        onSelect={(e) => setActivetab(e)}
-      >
-        <Tab eventKey="App" className="tab__appTab" title="App Dev">
-          <AppTab />
-        </Tab>
-        <Tab
-          eventKey="Work Experience"
-          className="tab__pythonTab"
-          title="Work Experience"
+      <div ref={resumeRef}>
+        <Tabs
+          defaultActiveKey={""}
+          id="fill-tab-example"
+          className="mb-3"
+          fill
+          onSelect={(e) => setActivetab(e)}
+          activeKey={activeTab ? activeTab : "  "}
         >
-          <WorkExperienceTab />
-        </Tab>
-        <Tab
-          eventKey="University Projects"
-          className="tab__githubTab"
-          title="University Projects"
-        >
-          Coming Soon...
-        </Tab>
-      </Tabs>
+          <Tab eventKey="App" className="tab__appTab" title="App Dev">
+            <AppTab />
+          </Tab>
+          <Tab
+            eventKey="Work Experience"
+            className="tab__pythonTab"
+            title="Work Experience"
+          >
+            <WorkExperienceTab />
+          </Tab>
+          <Tab
+            eventKey="University Projects"
+            className="tab__githubTab"
+            title="University Projects"
+          >
+            Coming Soon...
+          </Tab>
+        </Tabs>
+      </div>
     </div>
   );
 }

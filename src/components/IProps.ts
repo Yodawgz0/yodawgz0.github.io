@@ -1,5 +1,6 @@
-interface Props {
+export interface Props {
   skillsRef?: any;
   activeLinkValue: string;
-  activeLinkSet?: any;
+  activeLinkSet: any;
+  resumeRef?: any;
 }

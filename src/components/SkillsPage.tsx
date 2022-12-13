@@ -2,6 +2,7 @@ import "../Styles/SkillsPageStyles.scss";
 import SkillsSlider from "../features/skillsSlider";
 import React from "react";
 import { useEffect } from "react";
+import { Props } from "./IProps";
 
 export const SkillsPage = ({ skillsRef, activeLinkValue }: Props) => {
   useEffect(() => {

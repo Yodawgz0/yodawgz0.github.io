@@ -17,8 +17,16 @@ const App = () => {
         activeLinkValue={activeLink}
       />
       <HomePage />
-      <SkillsPage skillsRef={skillsRef} activeLinkValue={activeLink} />
-      <ProjectsPage />
+      <SkillsPage
+        skillsRef={skillsRef}
+        activeLinkValue={activeLink}
+        activeLinkSet={setActiveLink}
+      />
+      <ProjectsPage
+        resumeRef={resumeRef}
+        activeLinkValue={activeLink}
+        activeLinkSet={setActiveLink}
+      />
     </div>
   );
 };
