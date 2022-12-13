@@ -9,6 +9,7 @@ const App = () => {
   const [activeLink, setActiveLink] = useState<string>("home");
   const skillsRef = useRef();
   const resumeRef = useRef();
+  const homeRef = useRef();
 
   return (
     <div className="App">
@@ -16,7 +17,7 @@ const App = () => {
         activeLinkSet={setActiveLink}
         activeLinkValue={activeLink}
       />
-      <HomePage />
+      <HomePage activeLinkValue={activeLink} homeRef={homeRef} />
       <SkillsPage
         skillsRef={skillsRef}
         activeLinkValue={activeLink}

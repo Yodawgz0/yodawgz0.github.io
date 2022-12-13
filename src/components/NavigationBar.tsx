@@ -9,6 +9,7 @@ import github from "../assests/github.png";
 import "../Styles/NavigationBarstyle.scss";
 import React, { useEffect, useState } from "react";
 import "../Styles/coolGlitch.scss";
+import { Props } from "./IProps";
 
 export const NavigationBar = ({ activeLinkSet, activeLinkValue }: Props) => {
   const [scrolled, setScrolled] = useState(false);
@@ -32,7 +33,7 @@ export const NavigationBar = ({ activeLinkSet, activeLinkValue }: Props) => {
         position: scrolled ? "fixed" : "relative",
       }}
     >
-      <div className="container">
+      <div onClick={() => activeLinkSet("HomePage")} className="container">
         <p className="glitch">
           <span aria-hidden="true">Yodawgz0</span>
           Yodawgz0
@@ -40,7 +41,7 @@ export const NavigationBar = ({ activeLinkSet, activeLinkValue }: Props) => {
         </p>
       </div>
       <Nav className="NavbarMain__mainPanel">
-        {["Skills", "Resume", "AppDev", "Projects"].map((pageLink, index) => (
+        {["Skills", "AppDev", "Resume", "Projects"].map((pageLink, index) => (
           <Nav.Link
             key={index}
             className={

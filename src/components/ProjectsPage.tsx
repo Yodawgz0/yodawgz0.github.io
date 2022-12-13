@@ -7,13 +7,25 @@ import WorkExperienceTab from "../features/WorkExperienceTab";
 import { Props } from "./IProps";
 
 export default function ProjectsPage({ resumeRef, activeLinkValue }: Props) {
-  const [activeTab, setActivetab] = useState<string | null>("");
+  const [activeTab, setActivetab] = useState<string | null>("App Dev");
   useEffect(() => {
     if (activeLinkValue === "Resume") {
       setActivetab("Work Experience");
       resumeRef.current.scrollIntoView({
         behavior: "smooth",
-        block: "center",
+        block: "start",
+      });
+    } else if (activeLinkValue === "AppDev") {
+      setActivetab("App Dev");
+      resumeRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    } else if (activeLinkValue === "Projects") {
+      setActivetab("University Projects");
+      resumeRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
       });
     }
   }, [activeLinkValue, resumeRef]);
@@ -23,7 +35,7 @@ export default function ProjectsPage({ resumeRef, activeLinkValue }: Props) {
       className="mainProjectsPage"
       style={{
         background:
-          activeTab === "App"
+          activeTab === "App Dev"
             ? "linear-gradient(180deg,rgb(180, 4, 255) 13%  ,rgba(0,16,47,0.8550770650056898) 41%)"
             : activeTab === "Work Experience"
             ? "linear-gradient(180deg, rgb(180, 4, 255) 13%, rgba(47,0,0,0.8550770650056898) 41%)"
@@ -51,14 +63,13 @@ export default function ProjectsPage({ resumeRef, activeLinkValue }: Props) {
       </p>
       <div ref={resumeRef}>
         <Tabs
-          defaultActiveKey={""}
           id="fill-tab-example"
           className="mb-3"
           fill
           onSelect={(e) => setActivetab(e)}
           activeKey={activeTab ? activeTab : "  "}
         >
-          <Tab eventKey="App" className="tab__appTab" title="App Dev">
+          <Tab eventKey="App Dev" className="tab__appTab" title="App Dev">
             <AppTab />
           </Tab>
           <Tab

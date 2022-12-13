@@ -9,7 +9,7 @@ export const SkillsPage = ({ skillsRef, activeLinkValue }: Props) => {
     if (activeLinkValue === "Skills") {
       skillsRef.current.scrollIntoView({
         behavior: "smooth",
-        block: "center",
+        block: "end",
       });
     }
   }, [activeLinkValue, skillsRef]);
@@ -25,8 +25,11 @@ export const SkillsPage = ({ skillsRef, activeLinkValue }: Props) => {
         </span>
       </blockquote>
 
-      <div className="d-flex align-items-center flex-column pt-5 skillsMainPanel">
-        <div ref={skillsRef} className="skillsMain">
+      <div
+        ref={skillsRef}
+        className="d-flex align-items-center flex-column pt-5 skillsMainPanel"
+      >
+        <div className="skillsMain">
           <span className="h1 mt-2 skillsText">Skills</span>
           <span className="h5 mt-5 mx-5 px-5">
             Having learned various development tools and frameworks. I

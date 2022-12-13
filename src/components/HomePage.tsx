@@ -1,12 +1,20 @@
 import "../Styles/homePageStyle.scss";
 import { Row, Col } from "react-bootstrap";
 import frontPagePic from "../assests/frontPagePic.png";
-import React from "react";
+import React, { useEffect } from "react";
 
-export const HomePage = () => {
+export const HomePage = ({ homeRef, activeLinkValue }) => {
+  useEffect(() => {
+    if (activeLinkValue === "HomePage") {
+      homeRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }, [activeLinkValue, homeRef]);
   return (
     <Row>
-      <div className="wrapper">
+      <div ref={homeRef} className="wrapper">
         <Col>
           <div className="static-txt">Hi! I'm Ashley & I...</div>
           <ul className="dynamic-txts">
