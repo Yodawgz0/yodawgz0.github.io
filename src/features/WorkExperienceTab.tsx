@@ -16,59 +16,6 @@ const WorkExperienceTab = () => {
         <FontAwesomeIcon icon={faLink} />
         My Resume
       </a>
-      <div className="WorkExpContainer__positionHeaderContainer">
-        <h2>Internship</h2>
-        <span className="subFontItalics">Jan 2019 – March 2019</span>
-      </div>
-      <div className="WorkExpContainer__positionHeaderContainer">
-        <p>Wipro Technologies</p>
-        <span className="subFontItalics">Pune, India</span>
-      </div>
-      <div>
-        <ul>
-          <li>
-            Developed python scripts for automating various workflows.Worked
-            with selenium, web scraping
-          </li>
-          <li>
-            Worked with automation of windows applications like Outlook and
-            Excel
-          </li>
-          <li>Worked on JIRA, Confluence</li>
-        </ul>
-      </div>
-      {/* Python Dev */}
-      <div className="WorkExpContainer__positionHeaderContainer mt-5">
-        <h2>Software Developer</h2>
-        <span className="subFontItalics">June 2019 – June 2020</span>
-      </div>
-      <div className="WorkExpContainer__positionHeaderContainer">
-        <p>Wipro Technologies</p>
-        <span className="subFontItalics">Pune, India</span>
-      </div>
-      <div>
-        <ul>
-          <li>
-            Worked with ReactJS to develop test web applications and its
-            components.
-          </li>
-          <li>
-            Used Class Components of ReactJS and performed state and ref update.
-            Knowledge of componentDidUpdate,componentDidMOunt.
-          </li>
-          <li>
-            Used drag n drop feature with redux for enhanced user experience.
-          </li>
-          <li>
-            Development using Advanced Python in application & systems.
-            Libraries like Collections, OOPS, Xlrd, Numpy, etc.
-          </li>
-          <li>
-            Multiprocessing & Multithreading , logging & development of
-            processing messages.
-          </li>
-        </ul>
-      </div>
       {/* Sr Software Dev */}
       <div className="WorkExpContainer__positionHeaderContainer mt-5">
         <h2>Senior Software Developer</h2>
@@ -103,6 +50,60 @@ const WorkExperienceTab = () => {
             enhancement.
           </li>
           <li>Cypress for unit testing and Using Axios for API Calls.</li>
+        </ul>
+      </div>
+
+      {/* Python Dev */}
+      <div className="WorkExpContainer__positionHeaderContainer mt-5">
+        <h2>Software Developer</h2>
+        <span className="subFontItalics">June 2019 – June 2020</span>
+      </div>
+      <div className="WorkExpContainer__positionHeaderContainer">
+        <p>Wipro Technologies</p>
+        <span className="subFontItalics">Pune, India</span>
+      </div>
+      <div>
+        <ul>
+          <li>
+            Worked with ReactJS to develop test web applications and its
+            components.
+          </li>
+          <li>
+            Used Class Components of ReactJS and performed state and ref update.
+            Knowledge of componentDidUpdate,componentDidMOunt.
+          </li>
+          <li>
+            Used drag n drop feature with redux for enhanced user experience.
+          </li>
+          <li>
+            Development using Advanced Python in application & systems.
+            Libraries like Collections, OOPS, Xlrd, Numpy, etc.
+          </li>
+          <li>
+            Multiprocessing & Multithreading , logging & development of
+            processing messages.
+          </li>
+        </ul>
+      </div>
+      <div className="WorkExpContainer__positionHeaderContainer">
+        <h2>Internship</h2>
+        <span className="subFontItalics">Jan 2019 – March 2019</span>
+      </div>
+      <div className="WorkExpContainer__positionHeaderContainer">
+        <p>Wipro Technologies</p>
+        <span className="subFontItalics">Pune, India</span>
+      </div>
+      <div>
+        <ul>
+          <li>
+            Developed python scripts for automating various workflows.Worked
+            with selenium, web scraping
+          </li>
+          <li>
+            Worked with automation of windows applications like Outlook and
+            Excel
+          </li>
+          <li>Worked on JIRA, Confluence</li>
         </ul>
       </div>
       <div className="WorkExpContainer__positionHeaderContainer mt-5">

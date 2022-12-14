@@ -15,14 +15,11 @@
       border-radius: 30px;
     }
     &__Maintext {
-      text-align: center;
+      text-align: left;
       color: bisque;
       padding: 1.5em;
-      font-style: oblique;
-      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
       font-size: 160%;
-      margin-top: 2em;
+      margin-top: 1em;
     }
     &__techLogo {
       &__pyImg {
