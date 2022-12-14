@@ -13,6 +13,7 @@ import { Props } from "./IProps";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
+import emailjs from "@emailjs/browser";
 
 export const NavigationBar = ({ activeLinkSet, activeLinkValue }: Props) => {
   const [scrolled, setScrolled] = useState<boolean>(false);
@@ -20,6 +21,29 @@ export const NavigationBar = ({ activeLinkSet, activeLinkValue }: Props) => {
   const [emailVal, setEmailVal] = useState<string>("");
   const [innerTextVal, setInnerTextVal] = useState<string>("");
   const [showError, setShowError] = useState<[boolean, string]>([false, ""]);
+
+  const sendEmail = () => {
+    let templateParams = {
+      name: emailVal,
+      notes: innerTextVal,
+    };
+
+    emailjs
+      .send(
+        "service_9cqzfve",
+        "template_apd52qc",
+        templateParams,
+        "zuD_XodEGBui09Nzj"
+      )
+      .then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        function (error) {
+          console.log("FAILED...", error);
+        }
+      );
+  };
 
   const onEmailChange = (email: string) => {
     setShowError([false, "email"]);
@@ -30,7 +54,6 @@ export const NavigationBar = ({ activeLinkSet, activeLinkValue }: Props) => {
     setInnerTextVal(InnerText);
   };
   const handleSubmit = () => {
-    console.log(emailVal.length, innerTextVal.length);
     if (!emailVal.length && !innerTextVal.length) {
       setShowError([true, "empty"]);
       return;
@@ -46,6 +69,7 @@ export const NavigationBar = ({ activeLinkSet, activeLinkValue }: Props) => {
         setShowError([true, "text"]);
         return;
       }
+      sendEmail();
       handleClose();
     }
   };
@@ -168,7 +192,7 @@ export const NavigationBar = ({ activeLinkSet, activeLinkValue }: Props) => {
                 as="textarea"
                 required
                 rows={3}
-                placeholder="Something..."
+                placeholder="Something...(Also please include your name :D)"
                 onChange={(e) => {
                   onInnerTextChange(e.target.value);
                 }}
