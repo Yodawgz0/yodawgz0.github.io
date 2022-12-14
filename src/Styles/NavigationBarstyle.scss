@@ -14,14 +14,6 @@
     align-items: center;
     margin-right: 2ch;
   }
-  &__mainLogo {
-    color: white !important;
-    font-size: 2em;
-    font-weight: 700;
-    text-align: center;
-    text-decoration: none;
-    margin-left: 2ch;
-  }
 }
 .social-icon-panel {
   margin-left: 14px;
@@ -61,8 +53,6 @@
   font-weight: 700;
   justify-content: center;
   line-height: 1;
-  margin: 0;
-  outline: none;
   padding: 1rem 1.2rem;
   text-align: center;
   text-decoration: none;
@@ -76,4 +66,22 @@
 
 .contact-us:hover {
   box-shadow: #06baf6 0 0 0 3px, transparent 0 0 0 0;
+}
+@media screen and (min-width: 480px) and (max-width: 1000px) {
+  .NavbarMain {
+    .social-icon-panel {
+      &__icon {
+        width: 2.5em;
+        height: 2.5em;
+        margin-right: 10px;
+      }
+    }
+    .navbarlink {
+      font-size: 1rem !important;
+    }
+  }
+  .contact-us {
+    padding: 0.8rem 1rem;
+    font-size: 0.8rem;
+  }
 }

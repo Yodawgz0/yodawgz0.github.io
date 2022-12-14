@@ -62,3 +62,11 @@
     }
   }
 }
+
+@media screen and (min-width: 480px) and (max-width: 1000px) {
+  .container {
+    .glitch {
+      font-size: 2rem;
+    }
+  }
+}

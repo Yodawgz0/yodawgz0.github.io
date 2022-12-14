@@ -113,14 +113,10 @@ export const NavigationBar = ({ activeLinkSet, activeLinkValue }: Props) => {
         {["Skills", "AppDev", "Resume", "Projects"].map((pageLink, index) => (
           <Nav.Link
             key={index}
-            className={
-              activeLinkValue === "pageLink"
-                ? "acitveNavbarLink"
-                : "text-white  navbarlink"
-            }
+            className={activeLinkValue === pageLink ? "acitveNavbarLink" : ""}
             onClick={() => activeLinkSet(pageLink)}
           >
-            <span className="h5">
+            <span className="text-white navbarlink">
               {pageLink.slice(0, 1).toUpperCase() + pageLink.slice(1)}
             </span>
           </Nav.Link>

@@ -1,7 +1,7 @@
 {
   "homepage": "https://yodawgz0.github.io/",
   "name": "yodawgz0",
-  "version": "0.4",
+  "version": "0.9",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
