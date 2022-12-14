@@ -59,3 +59,35 @@ blockquote span {
   background-repeat: no-repeat;
   padding-bottom: 2ch;
 }
+
+@media screen and (min-width: 480px) and (max-width: 1000px) {
+  .IntroText {
+    font-size: 3.2vw;
+    margin-top: 1.3em;
+  }
+  blockquote {
+    padding-left: 35px;
+    margin: 1.7em 0em 0em 0em;
+  }
+  blockquote span {
+    background-position-x: 110%;
+  }
+  .skillsMainPanel {
+    margin-left: 3em;
+    margin-right: 1em;
+    .skillsMain {
+      .skillsTextBig {
+        font-size: 1.1em;
+      }
+    }
+  }
+  .skillSlider {
+    width: 80%;
+    padding: 5ch;
+    font-size: small;
+    .skillSliderBarMain {
+      padding: 10%;
+      color: white;
+    }
+  }
+}

@@ -31,7 +31,7 @@ export const SkillsPage = ({ skillsRef, activeLinkValue }: Props) => {
       >
         <div className="skillsMain">
           <span className="h1 mt-2 skillsText">Skills</span>
-          <span className="h5 mt-5 mx-5 px-5">
+          <span className="h5 mt-5 mx-5 px-5 skillsTextBig">
             Having learned various development tools and frameworks. I
             constantly create and work on various projects that not only keep me
             at speed with latest releases but also explore plethora of domains
