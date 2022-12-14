@@ -116,17 +116,19 @@ const WorkExperienceTab = () => {
         <br />
         <span className="subFontItalicsTitle">Frameworks: </span>
         <span className="subFontItalicsSKills">
-          React, Sharepoint365, VueJS , Cypress
+          React, React-Native, Sharepoint365, VueJS , Cypress, Bootstrap,
+          Tailwind CSS
         </span>{" "}
         <br />
         <span className="subFontItalicsTitle">Developer Tools: </span>
         <span className="subFontItalicsSKills">
-          Git, Linux, VS Code, PyCharm, React Dev, Chrome/Edge/Moz
+          GitHub, Linux, VS-Code, PyCharm, React Dev, Chome/Edge/Moz Dev,
         </span>
-        Dev, gulp <br />
+        gulp, ESLint, webpack <br />
         <span className="subFontItalicsTitle">Libraries: </span>
         <span className="subFontItalicsSKills">
-          Pandas, React, Redux, Fluent-UI, Bootstrap, FontAwesome, JSON
+          Pandas, React, Redux, Fluent-UI, FontAwesome, JSON, Xlrd, OS,
+          Collections, Lodash, date-fn
         </span>
         <br />
       </p>

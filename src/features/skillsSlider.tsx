@@ -18,6 +18,7 @@ export default function SkillsSlider() {
     { skill: "Redux", percent: 80 },
     { skill: "Core Web Vitals", percent: 70 },
     { skill: "Unit Testing", percent: 65 },
+    { skill: "Bootstrap", percent: 80 },
   ];
   const SliderSettings = {
     infinite: true,
