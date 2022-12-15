@@ -24,11 +24,10 @@
   list-style: none;
   font-style: italic;
   color: #f2befa;
-  font-size: 5vw;
+  font-size: 420%;
   font-weight: 500;
   position: relative;
   top: 0;
-
   animation: slide 12s steps(4) infinite;
 }
 @keyframes slide {
@@ -72,9 +71,12 @@
   .dynamic-txts li {
     transform: translateY(-0.4em);
     animation: slide 12s steps(4) infinite;
+    font-size: 5vw;
   }
   .dynamic-txts li span::after {
     animation: typing 3s steps(11) infinite;
+    height: 130%;
+    width: 100%;
   }
   @keyframes slide {
     100% {
