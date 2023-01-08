@@ -63,10 +63,19 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1000px) {
+@media screen and (min-width: 700px) and (max-width: 1000px) {
   .container {
     .glitch {
       font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  .container {
+    margin-top: 3%;
+    .glitch {
+      font-size: 4.5vw;
     }
   }
 }

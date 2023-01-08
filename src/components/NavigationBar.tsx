@@ -14,6 +14,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import emailjs from "@emailjs/browser";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 export const NavigationBar = ({ activeLinkSet, activeLinkValue }: Props) => {
   const [scrolled, setScrolled] = useState<boolean>(false);
@@ -121,6 +122,23 @@ export const NavigationBar = ({ activeLinkSet, activeLinkValue }: Props) => {
             </span>
           </Nav.Link>
         ))}
+        <NavDropdown
+          id="nav-dropdown-dark-example"
+          title="</>"
+          className="NabvarDropdown"
+        >
+          {["Skills", "AppDev", "Resume", "Projects"].map((pageLink, index) => (
+            <NavDropdown.Item
+              key={index}
+              className={activeLinkValue === pageLink ? "acitveNavbarLink" : ""}
+              onClick={() => activeLinkSet(pageLink)}
+            >
+              <span className="text-white">
+                {pageLink.slice(0, 1).toUpperCase() + pageLink.slice(1)}
+              </span>
+            </NavDropdown.Item>
+          ))}
+        </NavDropdown>
         <div className="social-icon-panel">
           <a
             target="_blank"
@@ -160,6 +178,7 @@ export const NavigationBar = ({ activeLinkSet, activeLinkValue }: Props) => {
           <span>Let's Connect</span>
         </button>
       </Nav>
+
       <Modal backdrop="static" show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Hit me Up!!</Modal.Title>
@@ -168,7 +187,6 @@ export const NavigationBar = ({ activeLinkSet, activeLinkValue }: Props) => {
           <Form>
             <Form.Group className="mb-3">
               <Form.Label>Email address</Form.Label>
-
               <Form.Control
                 required
                 type="email"

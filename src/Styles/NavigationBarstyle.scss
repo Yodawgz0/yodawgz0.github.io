@@ -8,7 +8,7 @@
     black 50%,
     transparent 100%
   ) !important;
-  color: white;
+  color: white !important;
   justify-content: space-between !important;
   &__mainPanel {
     align-items: center;
@@ -66,7 +66,12 @@
 .contact-us:hover {
   box-shadow: #06baf6 0 0 0 3px, transparent 0 0 0 0;
 }
-@media screen and (min-width: 480px) and (max-width: 1000px) {
+
+.NabvarDropdown {
+  display: none;
+}
+
+@media screen and (min-width: 720px) and (max-width: 1000px) {
   .NavbarMain {
     .social-icon-panel {
       &__icon {
@@ -82,5 +87,34 @@
   .contact-us {
     padding: 0.8rem 1rem;
     font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  .NavbarMain {
+    .social-icon-panel {
+      &__icon {
+        width: 2.5em;
+        height: 2.5em;
+        margin-right: 10px;
+      }
+    }
+    .navbarlink {
+      display: none;
+    }
+    .social-icon-panel {
+      &__icon {
+        width: 1.7em;
+        height: 1.7em;
+      }
+    }
+  }
+  .contact-us {
+    padding: 0.6rem 0.4rem;
+    font-size: 0.68rem;
+  }
+
+  .NabvarDropdown {
+    display: block;
   }
 }
