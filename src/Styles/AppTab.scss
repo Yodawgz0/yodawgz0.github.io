@@ -82,3 +82,45 @@
     }
   }
 }
+
+@media screen and (min-width: 0px) and (max-width: 720px) {
+  .AppTabContainer {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    &__conatiner {
+      flex-direction: column;
+      &__mainImg {
+        align-self: center;
+        width: 70%;
+        height: 70%;
+      }
+      &__Maintext {
+        font-size: 100%;
+        padding: 0.5em;
+      }
+      &__techLogo {
+        &__pyImg {
+          width: 15%;
+          height: 62%;
+          margin-top: 2em;
+        }
+        &__rnImg {
+          width: 33%;
+          margin-top: 1em;
+          padding-top: 3em;
+        }
+        &__JSImg {
+          width: 23%;
+          margin-top: 2em;
+          height: 70%;
+        }
+        &__sassImg {
+          width: 18%;
+          height: 71%;
+          margin-top: 1.5em;
+          padding: 0.4em;
+        }
+      }
+    }
+  }
+}
