@@ -36,3 +36,17 @@
     }
   }
 }
+
+@media screen and (min-width: 0px) and (max-width: 720px) {
+  .mainProjectsPage {
+    .heading {
+      font-size: 1.5em;
+      margin-bottom: 2em;
+    }
+    .headingtext {
+      font-size: 1.5em;
+      color: white;
+      padding: 0em 0em 2em 0em;
+    }
+  }
+}
