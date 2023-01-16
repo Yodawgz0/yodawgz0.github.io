@@ -98,7 +98,7 @@ export const NavigationBar = ({ activeLinkSet, activeLinkValue }: Props) => {
   }, [activeLinkSet]);
   return (
     <Navbar
-      className={"NavbarMain"}
+      className="NavbarMain"
       style={{
         position: scrolled ? "fixed" : "relative",
       }}
@@ -114,7 +114,7 @@ export const NavigationBar = ({ activeLinkSet, activeLinkValue }: Props) => {
         {["Skills", "AppDev", "Resume", "Projects"].map((pageLink, index) => (
           <Nav.Link
             key={index}
-            className={activeLinkValue === pageLink ? "acitveNavbarLink" : ""}
+            className="acitveNavbarLink"
             onClick={() => activeLinkSet(pageLink)}
           >
             <span className="text-white navbarlink">
@@ -122,23 +122,6 @@ export const NavigationBar = ({ activeLinkSet, activeLinkValue }: Props) => {
             </span>
           </Nav.Link>
         ))}
-        <NavDropdown
-          id="nav-dropdown-dark-example"
-          title="</>"
-          className="NabvarDropdown"
-        >
-          {["Skills", "AppDev", "Resume", "Projects"].map((pageLink, index) => (
-            <NavDropdown.Item
-              key={index}
-              className={activeLinkValue === pageLink ? "acitveNavbarLink" : ""}
-              onClick={() => activeLinkSet(pageLink)}
-            >
-              <span className="text-white">
-                {pageLink.slice(0, 1).toUpperCase() + pageLink.slice(1)}
-              </span>
-            </NavDropdown.Item>
-          ))}
-        </NavDropdown>
         <div className="social-icon-panel">
           <a
             target="_blank"
@@ -174,6 +157,56 @@ export const NavigationBar = ({ activeLinkSet, activeLinkValue }: Props) => {
             />
           </a>
         </div>
+        <button className="contact-us" onClick={() => handleShow()}>
+          <span>Let's Connect</span>
+        </button>
+      </Nav>
+      <Nav className="NavbarMain__phone">
+        <NavDropdown className="NavbarDropdownContainer" title="</>">
+          {["Skills", "AppDev", "Resume", "Projects"].map((pageLink, index) => (
+            <NavDropdown.Item
+              key={index}
+              className="NabvarDropdown"
+              onClick={() => activeLinkSet(pageLink)}
+            >
+              <span className="text-white">
+                {pageLink.slice(0, 1).toUpperCase() + pageLink.slice(1)}
+              </span>
+            </NavDropdown.Item>
+          ))}
+          <NavDropdown.Divider className="NabvarDropdown__divider" />
+          <NavDropdown.Item style={{ display: "flex" }}>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/Yodawgz0"
+            >
+              <img className="NabvarDropdown__icon" src={github} alt="github" />
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/ashleytennyson/"
+            >
+              <img
+                className="NabvarDropdown__icon"
+                src={linkedin}
+                alt="linkedin"
+              />
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.instagram.com/ashleytennyson0/"
+            >
+              <img
+                className="NabvarDropdown__icon"
+                src={instagram}
+                alt="instagram"
+              />
+            </a>
+          </NavDropdown.Item>
+        </NavDropdown>
         <button className="contact-us" onClick={() => handleShow()}>
           <span>Let's Connect</span>
         </button>
