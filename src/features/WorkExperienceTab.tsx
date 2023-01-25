@@ -70,7 +70,7 @@ const WorkExperienceTab = () => {
           </li>
           <li>
             Used Class Components of ReactJS and performed state and ref update.
-            Knowledge of componentDidUpdate,componentDidMOunt.
+            Knowledge of componentDidUpdate,{"\n"}componentDidMOunt.
           </li>
           <li>
             Used drag n drop feature with redux for enhanced user experience.

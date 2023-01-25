@@ -39,10 +39,20 @@
   }
 }
 
-@media screen and (min-width: 0px) and (max-width: 720px) {
+@media screen and (min-width: 480px) and (max-width: 720px) {
   .WorkExpContainer {
     padding-left: 0em;
     padding-right: 0em;
+    &__GithubLink {
+      margin-left: 20%;
+    }
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 4800px) {
+  .WorkExpContainer {
+    padding-left: 0em;
+    padding-right: 0em;
+    font-size: 0.8em;
     &__GithubLink {
       margin-left: 20%;
     }
