@@ -5,6 +5,7 @@ import Tabs from "react-bootstrap/Tabs";
 import AppTab from "../features/AppTab";
 import WorkExperienceTab from "../features/WorkExperienceTab";
 import { Props } from "./IProps";
+import UniversityProjs from "./UniversityProjs";
 
 export default function ProjectsPage({ resumeRef, activeLinkValue }: Props) {
   const [activeTab, setActivetab] = useState<string | null>("App Dev");
@@ -84,7 +85,7 @@ export default function ProjectsPage({ resumeRef, activeLinkValue }: Props) {
             className="tab__githubTab"
             title="University Projects"
           >
-            Coming Soon...
+            <UniversityProjs />
           </Tab>
         </Tabs>
       </div>
