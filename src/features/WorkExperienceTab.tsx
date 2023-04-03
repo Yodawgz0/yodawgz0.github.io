@@ -95,15 +95,8 @@ const WorkExperienceTab = () => {
       </div>
       <div>
         <ul>
-          <li>
-            Developed python scripts for automating various workflows.Worked
-            with selenium, web scraping
-          </li>
-          <li>
-            Worked with automation of windows applications like Outlook and
-            Excel
-          </li>
-          <li>Worked on JIRA, Confluence</li>
+          <li>Developed python scripts for automating various workflows.</li>
+          <li>Worked on automation, JIRA, Confluence, Bit-Bucket</li>
         </ul>
       </div>
       <div className="WorkExpContainer__positionHeaderContainer mt-5">
@@ -123,13 +116,13 @@ const WorkExperienceTab = () => {
         <br />
         <span className="subFontItalicsTitle">Developer Tools: </span>
         <span className="subFontItalicsSKills">
-          GitHub, Linux, VS-Code, PyCharm, React Dev, Chome/Edge/Moz Dev,
+          GitHub, Linux, VS-Code, PyCharm, React Dev, Chome/Edge/Moz Dev
         </span>
-        gulp, ESLint, webpack <br />
+        , gulp, ESLint, webpack, Android Studio <br />
         <span className="subFontItalicsTitle">Libraries: </span>
         <span className="subFontItalicsSKills">
-          Pandas, React, Redux, Fluent-UI, FontAwesome, JSON, Xlrd, OS,
-          Collections, Lodash, date-fn
+          Redux-Thunk, React, Redux, Fluent-UI, FontAwesome, JSON, Xlrd, OS,
+          Collections, Lodash, date-fns, Firebase, Firestore
         </span>
         <br />
       </p>

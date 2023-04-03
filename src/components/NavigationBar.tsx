@@ -16,7 +16,7 @@ import Modal from "react-bootstrap/Modal";
 import emailjs from "@emailjs/browser";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-export const NavigationBar = ({ activeLinkSet, activeLinkValue }: Props) => {
+export const NavigationBar = ({ activeLinkSet }: Props) => {
   const [scrolled, setScrolled] = useState<boolean>(false);
   const [show, setShow] = useState<boolean>(false);
   const [emailVal, setEmailVal] = useState<string>("");

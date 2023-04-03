@@ -3,7 +3,12 @@ import { Row, Col } from "react-bootstrap";
 import frontPagePic from "../assests/frontPagePic.png";
 import React, { useEffect } from "react";
 
-export const HomePage = ({ homeRef, activeLinkValue }) => {
+interface IHomePage {
+  homeRef: any;
+  activeLinkValue: string;
+}
+
+export const HomePage = ({ homeRef, activeLinkValue }: IHomePage) => {
   useEffect(() => {
     if (activeLinkValue === "HomePage") {
       homeRef.current.scrollIntoView({
@@ -19,16 +24,16 @@ export const HomePage = ({ homeRef, activeLinkValue }) => {
           <div className="static-txt">Hi! I'm Ashley & I...</div>
           <ul className="dynamic-txts">
             <li>
-              <span>Dote on Python</span>
+              <span>Dote on ReactJS</span>
             </li>
             <li>
-              <span>Curate APIs</span>
+              <span>Curate Native Apps</span>
             </li>
             <li>
               <span>Flex on TypeScript</span>
             </li>
             <li>
-              <span>Tread Front-End</span>
+              <span>Tread Python</span>
             </li>
           </ul>
         </Col>

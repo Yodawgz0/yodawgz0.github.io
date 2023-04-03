@@ -1,0 +1,60 @@
+declare module "*.png" {
+  const path: string;
+  export default path;
+}
+declare module "*.jpg" {
+  const path: string;
+  export default path;
+}
+declare module "*.pdf";
+declare module "*.jpeg";
+declare module "*.png";
+
+declare module "*.md" {
+  const value: string; // markdown is just a string
+  export default value;
+}
+
+declare module "react-slick" {
+  interface __config {
+    className?: string;
+    adaptiveHeight?: boolean;
+    arrows?: boolean;
+    autoplay?: boolean;
+    autoplaySpeed?: number; // integer
+    centerMode?: boolean;
+    centerPadding?: string | any;
+    cssEase?: string | any;
+    dots?: boolean;
+    dotsClass?: string;
+    draggable?: boolean;
+    easing?: string;
+    fade?: boolean;
+    focusOnSelect?: boolean;
+    infinite?: boolean; //   should the gallery wrap around it's contents
+    initialSlide?: number; // int
+    lazyLoad?: boolean;
+    rtl?: boolean;
+    slide?: string;
+    slidesToShow?: number; // int
+    slidesToScroll?: number; //  int
+    speed?: number; //int
+    swipe?: boolean;
+    swipeToSlide?: boolean;
+    touchMove?: boolean;
+    touchThreshold?: number; // int
+    variableWidth?: boolean;
+    useCSS?: boolean;
+    vertical?: boolean;
+    afterChange?: () => void;
+    beforeChange?: () => void;
+    slickGoTo?: number; // int
+  }
+
+  interface P extends __config {
+    responsive?: { breakpoint: number; settings: __config }[];
+  }
+
+  var foo: React.ClassicComponentClass<P>;
+  export = foo;
+}
