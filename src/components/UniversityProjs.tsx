@@ -17,8 +17,8 @@ function UniversityProjs() {
         Learning Management System
       </a>
 
-      <div className="text-start d-flex flex-row mt-5">
-        <div>
+      <div className="universityProject__WebProj mt-5">
+        <div className="universityProject__WebProj__details">
           {" "}
           <h3>Features:</h3>
           <ul>
