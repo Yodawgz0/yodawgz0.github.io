@@ -2,9 +2,20 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "../Styles/UniversityProjs.scss";
-import LMSImg from "../assests/LMS.png";
+import LMSImg1 from "../assests/LMS/1.png";
+import LMSImg2 from "../assests/LMS/2.png";
+import LMSImg3 from "../assests/LMS/3.png";
+import Slider from "react-slick";
 
 function UniversityProjs() {
+  const SliderSettings = {
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    autoplay: true,
+  };
   return (
     <div className="universityProject">
       <a
@@ -60,7 +71,31 @@ function UniversityProjs() {
             </li>
           </ul>
         </div>
-        <img className="universityProject__LMSImg" alt="LMSImg" src={LMSImg} />
+        <div className="universityProject__Slider">
+          <Slider {...SliderSettings}>
+            <div>
+              <img
+                className="universityProject__LMSImg"
+                alt="LMSImg"
+                src={LMSImg1}
+              />
+            </div>
+            <div>
+              <img
+                className="universityProject__LMSImg"
+                alt="LMSImg"
+                src={LMSImg2}
+              />
+            </div>
+            <div>
+              <img
+                className="universityProject__LMSImg"
+                alt="LMSImg"
+                src={LMSImg3}
+              />
+            </div>
+          </Slider>
+        </div>
       </div>
     </div>
   );
