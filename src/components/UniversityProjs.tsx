@@ -5,6 +5,12 @@ import "../Styles/UniversityProjs.scss";
 import LMSImg1 from "../assests/LMS/1.png";
 import LMSImg2 from "../assests/LMS/2.png";
 import LMSImg3 from "../assests/LMS/3.png";
+import bootstrapLogo from "../assests/LMS/techstack/bootstrap.png";
+import tslogo from "../assests/LMS/techstack/ts.png";
+import reduxlogo from "../assests/LMS/techstack/redux.png";
+import vercellogo from "../assests/LMS/techstack/vercel.jpg";
+import firebaseLogo from "../assests/LMS/techstack/firebase.png";
+
 import Slider from "react-slick";
 
 function UniversityProjs() {
@@ -95,6 +101,37 @@ function UniversityProjs() {
               />
             </div>
           </Slider>
+        </div>
+      </div>
+      <div className="d-flex flex-column ">
+        <h2 className="text-white fst-italic mb-5">Tech-Stack</h2>
+        <div className="d-flex flex-row flex-wrap justify-content-between">
+          {" "}
+          <img
+            className="universityProject__techstackLogo"
+            alt="bootstrapLogo"
+            src={bootstrapLogo}
+          />
+          <img
+            className="universityProject__techstackLogo"
+            alt="techstackLogo"
+            src={tslogo}
+          />
+          <img
+            className="universityProject__techstackLogo__redux"
+            alt="reduxlogo"
+            src={reduxlogo}
+          />
+          <img
+            className="universityProject__techstackLogo"
+            alt="firebaseLogo"
+            src={firebaseLogo}
+          />
+          <img
+            className="universityProject__techstackLogo"
+            alt="vercellogo"
+            src={vercellogo}
+          />
         </div>
       </div>
     </div>

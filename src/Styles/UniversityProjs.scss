@@ -18,6 +18,16 @@
   &__Slider {
     width: 40%;
   }
+  &__techstackLogo {
+    max-width: 280px;
+    max-height: 180px;
+    padding: 2ch;
+    &__redux {
+      width: 350px;
+      height: 180px;
+      padding: 2ch;
+    }
+  }
 }
 
 @media screen and (min-width: 720px) and (max-width: 1000px) {
@@ -80,6 +90,16 @@
     }
     &__Slider {
       width: 100%;
+    }
+    &__techstackLogo {
+      max-width: 100px;
+      max-height: 70px;
+      padding: 1ch;
+      &__redux {
+        width: 140px;
+        height: 70px;
+        padding: 1ch;
+      }
     }
   }
 }
