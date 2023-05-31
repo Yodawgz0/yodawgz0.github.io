@@ -32,24 +32,28 @@ const WorkExperienceTab = () => {
             workflows
           </li>
           <li>
-            ReactJS with their design libraries like Ant Design, Fluent-UI,
-            Markdown, Bootstrap. Using life-cycle hooks (useState,useEffect,
-            useRef \& custom hooks)
+            Expertise in using various Node.js and Express.js tools such as NPM,
+            Yarn, Express Generator, and Nodemon for efficient development and
+            deployment processes.
           </li>
           <li>
-            Usage of Redux, router, state management, props, and interact with
-            API.
+            Strong understanding of RESTful API design principles and experience
+            in building and consuming APIs using Express.js. using Socket.io or
+            WebSockets to facilitate communication between clients and servers.
           </li>
           <li>
-            Hoisting, Closure, HTML5, DOM BOM, Virtual DOM, Event Handling,
-            Navigation Handling, Arrow Functions, JSON Parsing.
+            Used MongoDB, ExpressJS, NodeJS for backend. Knowledge of BSON,
+            JSON. Using CI/CD
           </li>
           <li>
-            Used React libraries, Sharepoint 365 , lifecycle hooks, and
-            responsive props. Used debouncing and lazy load for performance
-            enhancement.
+            Used React libraries, Sharepoint 365, lifecycle hooks, and Redux
+            Thunk. Used debouncing and lazy load for performance enhancement.
           </li>
-          <li>Cypress for unit testing and Using Axios for API Calls.</li>
+          <li>
+            Experience with test-driven development (TDD) using tools like
+            Cypress, and Jest, ensuring code quality and reliability through
+            comprehensive testing.
+          </li>
         </ul>
       </div>
 
@@ -69,11 +73,14 @@ const WorkExperienceTab = () => {
             components.
           </li>
           <li>
-            Used Class Components of ReactJS and performed state and ref update.
-            Knowledge of componentDidUpdate,{"\n"}componentDidMOunt.
+            Proven expertise in server and API development, with a strong focus
+            on implementing efficient CI/CD pipelines to ensure seamless
+            deployment and delivery of high-quality software solutions.
           </li>
           <li>
-            Used drag n drop feature with redux for enhanced user experience.
+            Proficient in using TypeScript alongside modern tooling and
+            development workflows, including bundlers like Webpack, task runners
+            like Gulp, and testing frameworks like Jest.
           </li>
           <li>
             Development using Advanced Python in application & systems.
@@ -105,18 +112,19 @@ const WorkExperienceTab = () => {
       <p>
         <span className="subFontItalicsTitle"> Languages: </span>
         <span className="subFontItalicsSKills">
-          JavaScript, Python, TypeScript, SASS, HTML5, LESS/CSS3
+          JavaScript, Python, TypeScript, SASS, HTML5, LESS/CSS3, NodeJS, NoSQL
         </span>
         <br />
         <span className="subFontItalicsTitle">Frameworks: </span>
         <span className="subFontItalicsSKills">
           React, React-Native, Sharepoint365, VueJS , Cypress, Bootstrap,
-          Tailwind CSS
+          Tailwind CSS, ExpressJS, Axios
         </span>{" "}
         <br />
         <span className="subFontItalicsTitle">Developer Tools: </span>
         <span className="subFontItalicsSKills">
-          GitHub, Linux, VS-Code, PyCharm, React Dev, Chome/Edge/Moz Dev
+          GitHub, Linux, VS-Code, PyCharm, React Dev, Chome/Edge/Moz Dev,
+          PostMan, Compass
         </span>
         , gulp, ESLint, webpack, Android Studio <br />
         <span className="subFontItalicsTitle">Libraries: </span>
