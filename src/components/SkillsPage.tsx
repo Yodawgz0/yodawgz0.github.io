@@ -18,9 +18,9 @@ export const SkillsPage = ({ skillsRef, activeLinkValue }: Props) => {
       <blockquote>
         <span>
           <p className="h1 mb-5 IntroText">
-            Passionate about design and development of industry using Python
-            plus Web Applications that are capable of creating basic to high
-            performance advance workflows.
+            Passionate about design and development of industry using JS TS in
+            FullStack Web Applications that are capable of creating basic to
+            high performance advance workflows.
           </p>
         </span>
       </blockquote>

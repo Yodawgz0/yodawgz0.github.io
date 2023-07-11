@@ -9,8 +9,8 @@ import React from "react";
 export default function SkillsSlider() {
   const data = [
     { skill: "ReactJS", percent: 90 },
-    { skill: "JavaScript", percent: 80 },
-    { skill: "TypeScript", percent: 70 },
+    { skill: "JavaScript", percent: 90 },
+    { skill: "TypeScript", percent: 80 },
     { skill: "React-Native", percent: 50 },
     { skill: "CSS3/SASS", percent: 90 },
     { skill: "Python", percent: 95 },
@@ -19,6 +19,8 @@ export default function SkillsSlider() {
     { skill: "Core Web Vitals", percent: 70 },
     { skill: "Unit Testing", percent: 65 },
     { skill: "Bootstrap", percent: 80 },
+    { skill: "NodeJS", percent: 75 },
+    { skill: "MongoDB", percent: 65 },
   ];
   const SliderSettings = {
     infinite: true,
