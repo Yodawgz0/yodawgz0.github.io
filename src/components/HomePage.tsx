@@ -33,7 +33,7 @@ export const HomePage = ({ homeRef, activeLinkValue }: IHomePage) => {
               <span>Flex on TypeScript</span>
             </li>
             <li>
-              <span>Tread Python</span>
+              <span>Tread APIs & Python</span>
             </li>
           </ul>
         </Col>
