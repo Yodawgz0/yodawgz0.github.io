@@ -28,31 +28,34 @@ const WorkExperienceTab = () => {
       <div>
         <ul>
           <li>
-            Using TypeScript, JavaScript and React to develop websites \&
-            workflows
+            Full-stack web developer with proficiency in TypeScript, JavaScript,
+            and React, as well as securing JWT authentication for web
+            applications.
           </li>
           <li>
-            Expertise in using various Node.js and Express.js tools such as NPM,
-            Yarn, Express Generator, and Nodemon for efficient development and
-            deployment processes.
+            Experienced in using Node.js and Express.js, Skilled in designing
+            and consuming RESTful APIs using Express.js
           </li>
           <li>
-            Strong understanding of RESTful API design principles and experience
-            in building and consuming APIs using Express.js. using Socket.io or
-            WebSockets to facilitate communication between clients and servers.
+            Used MongoDB, ExpressJS, and NodeJS for backend development, and
+            CI/CD using Docker for deployment.
           </li>
           <li>
-            Used MongoDB, ExpressJS, NodeJS for backend. Knowledge of BSON,
-            JSON. Using CI/CD
+            Built user interfaces using React JS and ant design, and enhanced
+            performance using Redux Thunk, debouncing, and lazy load.
           </li>
           <li>
-            Used React libraries, Sharepoint 365, lifecycle hooks, and Redux
-            Thunk. Used debouncing and lazy load for performance enhancement.
+            Implementing features such as routing, authentication,
+            authorization, data fetching, and error handling. Practiced
+            test-driven development (TDD) using Cypress and Jest, ensuring code
+            quality and reliability through comprehensive testing
           </li>
           <li>
-            Experience with test-driven development (TDD) using tools like
-            Cypress, and Jest, ensuring code quality and reliability through
-            comprehensive testing.
+            Used Next.js to create fast and scalable web applications,
+            leveraging both server-side rendering (SSR) and client-side
+            rendering (CSR) techniques. Optimized web performance and user
+            experience by measuring and improving Core Web Vitals, such as
+            loading speed, interactivity, and visual stability.
           </li>
         </ul>
       </div>
@@ -69,26 +72,23 @@ const WorkExperienceTab = () => {
       <div>
         <ul>
           <li>
-            Worked with ReactJS to develop test web applications and its
-            components.
+            Developed test web applications and their components using ReactJS
+            and various libraries such as ant design, bootstrap, and mui.
           </li>
           <li>
-            Proven expertise in server and API development, with a strong focus
-            on implementing efficient CI/CD pipelines to ensure seamless
-            deployment and delivery of high-quality software solutions.
+            Proficient in using JavaScript, JSON, and TypeScript along with
+            modern tooling and development workflows, including bundlers like
+            Webpack, task runners like Gulp, and testing frameworks like Jest.
           </li>
           <li>
-            Proficient in using TypeScript alongside modern tooling and
-            development workflows, including bundlers like Webpack, task runners
-            like Gulp, and testing frameworks like Jest.
+            Experienced in using class components and ES6 features in ReactJS,
+            such as arrow functions, destructuring, spread operator, and
+            template literals.
           </li>
           <li>
-            Development using Advanced Python in application & systems.
-            Libraries like Collections, OOPS, Xlrd, Numpy, etc.
-          </li>
-          <li>
-            Multiprocessing & Multithreading , logging & development of
-            processing messages.
+            Skilled in creating and using custom hooks in ReactJS, such as
+            useReducer, useEffect, and useState, to manage state and side
+            effects in functional components.
           </li>
         </ul>
       </div>
@@ -102,8 +102,10 @@ const WorkExperienceTab = () => {
       </div>
       <div>
         <ul>
-          <li>Developed python scripts for automating various workflows.</li>
-          <li>Worked on automation, JIRA, Confluence, Bit-Bucket</li>
+          <li>
+            Developed Python scripts for automating various workflows.Worked on
+            automation, JIRA, Confluence, Bit-Bucket
+          </li>
         </ul>
       </div>
       <div className="WorkExpContainer__positionHeaderContainer mt-5">
@@ -117,8 +119,8 @@ const WorkExperienceTab = () => {
         <br />
         <span className="subFontItalicsTitle">Frameworks: </span>
         <span className="subFontItalicsSKills">
-          React, React-Native, Sharepoint365, VueJS , Cypress, Bootstrap,
-          Tailwind CSS, ExpressJS, Axios
+          React, React-Native Cypress, Bootstrap, Tailwind CSS, ExpressJS,
+          Axios, NextJS
         </span>{" "}
         <br />
         <span className="subFontItalicsTitle">Developer Tools: </span>
@@ -129,8 +131,8 @@ const WorkExperienceTab = () => {
         , gulp, ESLint, webpack, Android Studio <br />
         <span className="subFontItalicsTitle">Libraries: </span>
         <span className="subFontItalicsSKills">
-          Redux-Thunk, React, Redux, Fluent-UI, FontAwesome, JSON, Xlrd, OS,
-          Collections, Lodash, date-fns, Firebase, Firestore
+          Redux-Thunk, React, Redux, FontAwesome, JSON, Lodash, date-fns,
+          Firebase, Firestore, bson, Math
         </span>
         <br />
       </p>
