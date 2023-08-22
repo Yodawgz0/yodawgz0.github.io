@@ -28,34 +28,19 @@ const WorkExperienceTab = () => {
       <div>
         <ul>
           <li>
-            Full-stack web developer with proficiency in TypeScript, JavaScript,
-            and React, as well as securing JWT authentication for web
-            applications.
+            Responsibility full stack web applications using React, Node.js,
+            Express.js, and MongoDB, increasing UI performance by 40% and user
+            satisfaction by 25%.
           </li>
           <li>
-            Experienced in using Node.js and Express.js, Skilled in designing
-            and consuming RESTful APIs using Express.js
+            Enhanced code quality and security by migrating to TypeScript and
+            integrating JWT authentication; improved API performance by
+            optimizing NoSQL queries, reducing response time by 80%.
           </li>
           <li>
-            Used MongoDB, ExpressJS, and NodeJS for backend development, and
-            CI/CD using Docker for deployment.
-          </li>
-          <li>
-            Built user interfaces using React JS and ant design, and enhanced
-            performance using Redux Thunk, debouncing, and lazy load.
-          </li>
-          <li>
-            Implementing features such as routing, authentication,
-            authorization, data fetching, and error handling. Practiced
-            test-driven development (TDD) using Cypress and Jest, ensuring code
-            quality and reliability through comprehensive testing
-          </li>
-          <li>
-            Used Next.js to create fast and scalable web applications,
-            leveraging both server-side rendering (SSR) and client-side
-            rendering (CSR) techniques. Optimized web performance and user
-            experience by measuring and improving Core Web Vitals, such as
-            loading speed, interactivity, and visual stability.
+            Applied test-driven development (TDD) using Cypress and Jest,
+            ensuring code reliability and coverage. Automated additional 10-15%
+            test cases, saving time and resources
           </li>
         </ul>
       </div>
@@ -72,23 +57,20 @@ const WorkExperienceTab = () => {
       <div>
         <ul>
           <li>
-            Developed test web applications and their components using ReactJS
-            and various libraries such as ant design, bootstrap, and mui.
+            Created front-end of a test web application, enabling users to test
+            web components, APIs, performance, and core web vitals. Reduced
+            manual testing workload by 50%. Server as of nodejs.
           </li>
           <li>
-            Proficient in using JavaScript, JSON, and TypeScript along with
-            modern tooling and development workflows, including bundlers like
-            Webpack, task runners like Gulp, and testing frameworks like Jest.
+            • Utilized JavaScript, ReactJS with hooks, JSON, and Webpack,
+            integrating Redux and Thunk for state management; Gulp for task
+            execution, decreasing deployment time by 20%
           </li>
           <li>
-            Experienced in using class components and ES6 features in ReactJS,
-            such as arrow functions, destructuring, spread operator, and
-            template literals.
-          </li>
-          <li>
-            Skilled in creating and using custom hooks in ReactJS, such as
-            useReducer, useEffect, and useState, to manage state and side
-            effects in functional components.
+            Employed Webpack, ESLint, and Gulp for bundling and linting
+            workflows, reducing client load by 30%. Leveraged libraries such as
+            React Bootstrap, Material UI, and Chart.js for UI design and data
+            visualization.
           </li>
         </ul>
       </div>
@@ -103,8 +85,16 @@ const WorkExperienceTab = () => {
       <div>
         <ul>
           <li>
-            Developed Python scripts for automating various workflows.Worked on
-            automation, JIRA, Confluence, Bit-Bucket
+            Automated 75% of workflows using Python scripting, increasing
+            efficiency and productivity
+          </li>
+          <li>
+            Managed 2 projects, using JIRA, Confluence, GitLab, and Bitbucket,
+            collaborating with team members and stakeholders.
+          </li>
+          <li>
+            Portal for 120+ employees using VanillaJS, facilitating daily
+            tracking and assignments.
           </li>
         </ul>
       </div>
