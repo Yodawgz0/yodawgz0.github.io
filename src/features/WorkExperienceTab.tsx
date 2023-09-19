@@ -1,6 +1,6 @@
 import "../Styles/WorkExpStyles.scss";
 import React from "react";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // @ts-ignore
 import AshleyResume from "../assests/AshleyResume.pdf";
@@ -13,7 +13,7 @@ const WorkExperienceTab = () => {
         href={AshleyResume}
         download={true}
       >
-        <FontAwesomeIcon icon={faLink} />
+        <FontAwesomeIcon icon={faDownload} />
         My Resume
       </a>
       {/* Sr Software Dev */}
