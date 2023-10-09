@@ -117,13 +117,14 @@ const WorkExperienceTab = () => {
       <p>
         <span className="subFontItalicsTitle"> Languages: </span>
         <span className="subFontItalicsSKills">
-          JavaScript, Python, TypeScript, SASS, HTML5, LESS/CSS3, NodeJS, NoSQL
+          JavaScript, Python, TypeScript, SASS, HTML5, LESS/CSS3, NodeJS, NoSQL,
+          SQL
         </span>
         <br />
         <span className="subFontItalicsTitle">Frameworks: </span>
         <span className="subFontItalicsSKills">
           React, React-Native Cypress, Bootstrap, Tailwind CSS, ExpressJS,
-          Axios, NextJS
+          Axios, NextJS, VueJS
         </span>{" "}
         <br />
         <span className="subFontItalicsTitle">Developer Tools: </span>
@@ -131,7 +132,7 @@ const WorkExperienceTab = () => {
           GitHub, Figma, Chome/Edge/Moz Dev, gulp, ESLint, Android Studio,
           PostMan, Redis
         </span>
-        , gulp, ESLint, webpack, Android Studio <br />
+        , gulp, ESLint, webpack <br />
         <span className="subFontItalicsTitle">Libraries: </span>
         <span className="subFontItalicsSKills">
           Redux-Thunk, React, Redux, FontAwesome, JSON, Lodash, date-fns,
