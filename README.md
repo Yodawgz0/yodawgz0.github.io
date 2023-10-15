@@ -2,4 +2,7 @@
 My portfolio! :)
 
 Hi! This is Ashley and this is my portfolio site.
-It has all the details of my skills Projects and other contacts
+It has all the details of my skills Projects 
+Resume 
+
+Iam a student at Indiana university Bloomington. 
