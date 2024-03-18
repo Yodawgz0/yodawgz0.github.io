@@ -29,20 +29,18 @@ const WorkExperienceTab = () => {
         <ul>
           <li>
             Implemented React, Node.js, Express.js, and MongoDB to build
-            high-performing full-stack web applications, driving a significant
-            40\% enhancement in UI performance and elevating user satisfaction
-            by 25\%
+            high-performing full-stack web applications, driving an enhancement
+            in UI performance
           </li>
           <li>
             Led a seamless transition from JavaScript to TypeScript, bolstering
             code quality and security; integrated JWT authentication for
-            enhanced user data protection, leading to an impressive 80\%
-            decrease in API response time
+            enhanced user data protection
           </li>
           <li>
             Optimized code reliability and coverage through the implementation
-            of test-driven development (TDD) methodology using Cypress and Jest
-            frameworks. Increased automated test cases by 10-15\%
+            of test-driven development (TDD)methodology using Cypress and Jest
+            frameworks
           </li>
           <li>
             Orchestrated the automation of 75\% of workflows through Python
@@ -50,8 +48,6 @@ const WorkExperienceTab = () => {
           </li>
         </ul>
       </div>
-
-      {/* Python Dev */}
       <div className="WorkExpContainer__positionHeaderContainer mt-5">
         <h2>Software Developer</h2>
         <span className="subFontItalics">June 2019 – June 2020</span>
@@ -63,27 +59,24 @@ const WorkExperienceTab = () => {
       <div>
         <ul>
           <li>
-            Spearheaded the development and execution of a groundbreaking test
-            web application, leveraging Node.js, to enable comprehensive
-            evaluations of web components, APIs, performance, and core web
-            vitals. Achieved a remarkable 50\% reduction in manual testing
-            efforts
+            Spearheaded the development and execution of test web application,
+            leveraging Node.js, to enable comprehensive evaluations of web
+            components, APIs, performance, and core web vitals.
           </li>
           <li>
             Revamped website user interface using JavaScript, ReactJS with
             hooks, and JSON; integrated Redux and Thunk for efficient state
-            management, resulting in a 20\% decrease in deployment time
+            management, resulting in a decrease in deployment time
           </li>
           <li>
-            Implemented React Bootstrap, Ant-D, and Material UI libraries to
-            craft visually captivating data visualizations, resulting in a 25\%
-            increase in user engagement and a 15\% decrease in bounce rate.
+            Implemented multithreading and multiprocessing on the server side to
+            enhance performance. Introduced asynchronous functions for handling
+            multiple streams, optimizing concurrency in the system.
           </li>
           <li>
-            Streamlined collaboration across four cross-functional teams by
-            implementing JIRA, Confluence, GitLab, and Bitbucket; achieved a
-            remarkable 40\% reduction in project delivery time and boosted
-            stakeholder satisfaction by 20\%
+            Streamlined collaboration across cross-functional teams by
+            implementing JIRA, Confluence, GitLab, and Bitbucket achieved a
+            reduction in project delivery time and boosted stakeholder
           </li>
         </ul>
       </div>
@@ -112,31 +105,35 @@ const WorkExperienceTab = () => {
         </ul>
       </div>
       <div className="WorkExpContainer__positionHeaderContainer mt-5">
-        <h4>Technical Skills:</h4>
+        <h4>TLanguages:</h4>
       </div>
       <p>
         <span className="subFontItalicsTitle"> Languages: </span>
         <span className="subFontItalicsSKills">
-          JavaScript, Python, TypeScript, SASS, HTML5, LESS/CSS3, NodeJS, NoSQL,
-          SQL
+          Go, TypeScript, JavaScript, Python, SASS, HTML5, LESS/CSS3, NoSQL,
+          NodeJS, CQL
         </span>
         <br />
         <span className="subFontItalicsTitle">Frameworks: </span>
         <span className="subFontItalicsSKills">
-          React, React-Native Cypress, Bootstrap, Tailwind CSS, ExpressJS,
-          Axios, NextJS, VueJS
+          React, NextJS, SOAP, REST, Ant-Design, React-Native, VueJS, Cypress,
+          Bootstrap, Tailwind CSS, ExpressJS, WebPack, Docker
         </span>{" "}
         <br />
         <span className="subFontItalicsTitle">Developer Tools: </span>
         <span className="subFontItalicsSKills">
           GitHub, Figma, Chome/Edge/Moz Dev, gulp, ESLint, Android Studio,
-          PostMan, Redis
+          PostMan
         </span>
         , gulp, ESLint, webpack <br />
         <span className="subFontItalicsTitle">Libraries: </span>
         <span className="subFontItalicsSKills">
-          Redux-Thunk, React, Redux, FontAwesome, JSON, Lodash, date-fns,
-          Firebase, Firestore, bson, Math
+          Redux-Thunk, React, Redux, Fluent-UI, FontAwesome, JSON, Lodash,
+          date-fns, C\# (Unity)
+        </span>
+        <span className="subFontItalicsTitle">Databases: </span>
+        <span className="subFontItalicsSKills">
+          Redis, MongoDB, Cassandra, Sqlite3, Firebase, Firestore
         </span>
         <br />
       </p>
